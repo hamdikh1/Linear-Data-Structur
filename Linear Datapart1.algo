@@ -1,0 +1,31 @@
+ALGORITHM Prolem
+VAR
+   tab1, tab2 : array_name : ARRAY_OF INTEGER[30];
+   sum :INTEGER := 0;
+   I,J : INTEGER;
+   RES : BOOLEAN ;
+BEGIN
+    FOR i FROM 0 TO Tab1.length -1 step 1 DO
+        RES = False ;
+        FOR j FOR 0 to tab2.length -1 step 1 DO
+         IF  (tab1[i]= tab2[j]) THEN
+         res = true
+         END IF
+         END_FOR
+         IF (not found) THEN
+         sum = sum + tab1[i]
+    END_FOR
+
+       FOR j FROM 0 TO Tab2.length -1 step 1 DO
+        RES = False ;
+        FOR i FOR 0 to tab1.length -1 step 1 DO
+         IF  (tab1[i]= tab2[j]) THEN
+         res = true
+         END IF
+         END_FOR
+         IF (not found) THEN
+         sum = sum + tab2[j]
+    END_FOR
+    whrite (sum)
+    
+END

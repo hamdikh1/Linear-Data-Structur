@@ -1,0 +1,34 @@
+ALGORITHM Prolem2
+VAR
+ tab1, tab2 : array_name : ARRAY_OF INTEGER[30];
+ tab3 : ARRAY_OF INTEGER [50];
+ Htab :HASH_TABLE<INTGER,INTEGER>;
+ i, count : INTEGER ;
+ sum : INTEGER :=0 ;
+ BEGIN
+    FOR i FROM 0 tab1.length-1 step 1 Do
+    IF (htab.lookup(tab1[i])=True) THEN
+       count := htab.get(tab1[i]) ;
+       htab.insert(tab1[i], count+1)
+       ELSE
+       htab.insert(tab1[i]+1)
+    END_IF
+    
+    
+    FOR i FROM 0 tab2.length-1 step 1 Do
+    IF (htab.lookup(tab2[i])=True) THEN
+       count := htab.get(tab2[i]) ;
+       htab.insert(tab2[i], count+1)
+       ELSE
+       htab.insert(tab2[i]+1)
+    END_IF
+    END_FOR
+
+tab3:= htab getKeys();
+FOR i FROM 0 tab3.length-1 step 1 Do
+IF(Htab.get(tab3[i]=1)) THEN
+   sum=sum + tab3[i];
+END_IF
+END_FOR
+whrite(sum)
+ END
